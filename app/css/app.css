@@ -1,1 +1,65 @@
+/* Footer --------------------------------------------------------------------*/
+/* Base Footer Styling */
+.site-footer {
+  background-color: #FFFFFF; /* Matches the dark slate blue */
+  color: #333333;
+  font-family: Arial, sans-serif;
+  padding: 50px 20px;
+  /* The Shadow instead of a line */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.15); 
+}
 
+/* Container set to a 4-column Grid */
+.footer-container {
+  display: grid;
+  /* Automatically adjusts to fewer columns on smaller screens */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px; /* Limits how wide the footer stretches */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Column Headings */
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* Remove default list styles */
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Space out the individual links */
+.footer-col li {
+  margin-bottom: 12px;
+}
+
+/* Link Styling */
+.footer-col a {
+  color: #333333; /* Slightly off-white for contrast against the heading */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Footer Section */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px; /* Space between the columns and this bottom section */
+  margin-top: 20px;
+}
+
+.copyright-text {
+  color: #333333;
+  font-size: 12px;
+  margin: 0;
+}
