@@ -1,65 +1,105 @@
 /* Footer --------------------------------------------------------------------*/
 /* Base Footer Styling */
 .site-footer {
-  background-color: #FFFFFF; /* Matches the dark slate blue */
+  background-color: #f2f0eb; /* Beige/Gray background from picture */
   color: #333333;
   font-family: Arial, sans-serif;
-  padding: 50px 20px;
-  /* The Shadow instead of a line */
-  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.15); 
+  padding: 0;
+  border-top: 1px solid #d4d4d4; /* The line is at the very top */
+  position: relative;
+}
+
+/* The Container that holds the Circle and Text */
+.back-to-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Push the button down so it starts below the border line */
+  padding-top: 25px; 
+  margin-bottom: 40px;
+}
+
+/* The Green Circle */
+.back-to-top-btn {
+  background-color: #66004d; 
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  /* Ensure no negative margins are pulling it up */
+  margin-top: 0; 
+  transition: transform 0.2s;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(3px); /* Sweet little hover effect downwards */
+}
+
+/* The Text under the circle */
+.go-to-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Container set to a 4-column Grid */
 .footer-container {
   display: grid;
-  /* Automatically adjusts to fewer columns on smaller screens */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  max-width: 1000px; /* Limits how wide the footer stretches */
-  margin: 0 auto; /* Centers the container */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
 }
 
 /* Column Headings */
 .footer-col h3 {
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
   font-weight: 700;
-  margin-bottom: 15px;
-  margin-top: 0;
 }
 
 /* Remove default list styles */
 .footer-col ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 /* Space out the individual links */
 .footer-col li {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 /* Link Styling */
 .footer-col a {
-  color: #333333; /* Slightly off-white for contrast against the heading */
+  color: #333333;
   text-decoration: none;
   font-size: 14px;
 }
 
 /* Hover effect */
 .footer-col a:hover {
-  text-decoration: underline;
+  color: #620046;
 }
 
 /* Bottom Footer Section */
 .footer-bottom {
-  text-align: center;
-  padding-top: 30px; /* Space between the columns and this bottom section */
-  margin-top: 20px;
+  width: 100%;
+  text-align: center; /* This centers the text inside */
+  padding: 20px 0;    /* Adds space above and below */
 }
 
 .copyright-text {
   color: #333333;
-  font-size: 12px;
-  margin: 0;
+  font-size: 13px;
 }
