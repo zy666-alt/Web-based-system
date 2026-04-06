@@ -25,10 +25,10 @@ USE `db9`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order`
+-- Table structure for table `customer`
 --
 
-CREATE TABLE `order` (
+CREATE TABLE `customer` (
   `id` char(4) NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -149,9 +149,9 @@ INSERT INTO customers (Name, Email, Phone_number, Gender, Address_line1, Address
 -- --------------------------------------------------------
 
 --
--- Indexes for table `order`
+-- Indexes for table `customer`
 --
-ALTER TABLE `order`
+ALTER TABLE `customer`
   ADD PRIMARY KEY (`id`);
 
 COMMIT;
