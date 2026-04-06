@@ -98,9 +98,7 @@ INSERT INTO `product` (`id`, `name`, `price`, `photo`) VALUES
 ('P015', 'Hot Chocolate', 7.90 'images15.jpg'),
 
 
-
-
-INSERT INTO customers (Name, Email, Phone_number, Gender, Address_line1, Address_line2, city, state, Post_code, Register_Date, Password) VALUES
+INSERT INTO customer (Name, Email, Phone_number, Gender, Address_line1, Address_line2, city, state, Post_code, Register_Date, Password) VALUES
 ('Angela Chin Jie Mei', 'angela.chin@gmail.com', '0184388295', 'Female', 'No. 15, Jalan Burma', 'Jelutong', 'George Town', 'Pulau Pinang', '10450', '2024-07-23', 'St4WxH28'),
 ('Lim Ming Ming', 'lim.ming@email.com', '0123456789', 'Female', '12, Jalan SS2/72', 'Taman Bahagia', 'Petaling Jaya', 'Selangor', '47300', '2023-05-12', 'Ax7mKp29'),
 ('Nur Aisyah binti Abdullah', 'nuraisyah@email.com', '0112345678', 'Female', '45, Jalan Merbuk', 'Taman Desa', 'Kuala Lumpur', 'WP Kuala Lumpur', '58100', '2023-07-23', 'Qw8ZtL41'),
@@ -208,6 +206,25 @@ INSERT INTO customers (Name, Email, Phone_number, Gender, Address_line1, Address
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
+  ADD PRIMARY KEY (`id`);
+
+-- Indexes for table `item`
+--
+ALTER TABLE `item`
+  ADD PRIMARY KEY (`order_id`,`product_id`),
+  ADD KEY `product_id` (`product_id`);
+
+--
+-- Indexes for table `order`
+--
+ALTER TABLE `order`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 COMMIT;
