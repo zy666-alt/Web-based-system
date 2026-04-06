@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db9`
+-- Database: `db`
 --
-CREATE DATABASE IF NOT EXISTS `db9` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `db9`;
+CREATE DATABASE IF NOT EXISTS `db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `db`;
 
 -- --------------------------------------------------------
 
@@ -42,7 +42,63 @@ CREATE TABLE `customer` (
   `register_date` date NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Table structure for table `item`
+--
+
+CREATE TABLE `item` (
+  `order_id` int(11) NOT NULL,
+  `product_id` char(4) NOT NULL,
+  `price` decimal(4,2) NOT NULL,
+  `unit` int(11) NOT NULL,
+  `subtotal` decimal(8,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `id` int(11) NOT NULL,
+  `datetime` datetime NOT NULL,
+  `count` int(11) NOT NULL,
+  `total` decimal(8,2) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` char(4) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `price` decimal(4,2) NOT NULL,
+  `photo` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `name`, `price`, `photo`) VALUES
+('P001', 'Matcha Strawberry Boba Milk Tea', 15.90, 'banana.jpg'),
+('P002', 'Mango Boba Milk Tea', 15.90, 'cherries.jpg'),
+('P003', 'Chocolate Peanut Boba Milk Tea', 14.90, 'grapes.jpg'),
+('P004', 'Chocolate Boba Milk Tea', 14.90, 'green-apple.jpg'),
+('P005', 'Watermelon Fresh Juice', 8.90, 'kiwi.jpg'),
+('P006', 'Ice Latte', 12.90, 'lemon.jpg'),
+('P007', 'Citrus Sunrise Juice', 7.90 'mango.jpg'),
+('P008', 'Iced Lemon Orange Tea', 8.90, 'melon.jpg');
+('P009', 'Matcha Iced Latte', 14.90, 'banana.jpg'),
+('P010', 'Hot Lattle', 12.90, 'cherries.jpg'),
+('P011', 'Hot Matcha Lattle', 13.90, 'grapes.jpg'),
+('P012', 'Sweet Strawberry', 12.90, 'green-apple.jpg'),
+('P013', 'Ice Caramel Lattle', 12.90, 'kiwi.jpg'),
+('P014', 'Ice Chocolate', 12.90, 'lemon.jpg'),
+('P015', 'Hot Chocolate', 7.90 'mango.jpg'),
+
+
+
 
 INSERT INTO customers (Name, Email, Phone_number, Gender, Address_line1, Address_line2, city, state, Post_code, Register_Date, Password) VALUES
 ('Angela Chin Jie Mei', 'angela.chin@gmail.com', '0184388295', 'Female', 'No. 15, Jalan Burma', 'Jelutong', 'George Town', 'Pulau Pinang', '10450', '2024-07-23', 'St4WxH28'),
