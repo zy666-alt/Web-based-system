@@ -81,21 +81,21 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `price`, `photo`) VALUES
-('P001', 'Matcha Strawberry Boba Milk Tea', 15.90, 'banana.jpg'),
-('P002', 'Mango Boba Milk Tea', 15.90, 'cherries.jpg'),
-('P003', 'Chocolate Peanut Boba Milk Tea', 14.90, 'grapes.jpg'),
-('P004', 'Chocolate Boba Milk Tea', 14.90, 'green-apple.jpg'),
-('P005', 'Watermelon Fresh Juice', 8.90, 'kiwi.jpg'),
-('P006', 'Ice Latte', 12.90, 'lemon.jpg'),
-('P007', 'Citrus Sunrise Juice', 7.90 'mango.jpg'),
-('P008', 'Iced Lemon Orange Tea', 8.90, 'melon.jpg');
-('P009', 'Matcha Iced Latte', 14.90, 'banana.jpg'),
-('P010', 'Hot Lattle', 12.90, 'cherries.jpg'),
-('P011', 'Hot Matcha Lattle', 13.90, 'grapes.jpg'),
-('P012', 'Sweet Strawberry', 12.90, 'green-apple.jpg'),
-('P013', 'Ice Caramel Lattle', 12.90, 'kiwi.jpg'),
-('P014', 'Ice Chocolate', 12.90, 'lemon.jpg'),
-('P015', 'Hot Chocolate', 7.90 'mango.jpg'),
+('P001', 'Matcha Strawberry Boba Milk Tea', 15.90, 'images1.jpg'),
+('P002', 'Mango Boba Milk Tea', 15.90, 'images2.jpg'),
+('P003', 'Chocolate Peanut Boba Milk Tea', 14.90, 'images3.jpg'),
+('P004', 'Chocolate Boba Milk Tea', 14.90, 'images4.jpg'),
+('P005', 'Watermelon Fresh Juice', 8.90, 'images5.jpg'),
+('P006', 'Ice Latte', 12.90, 'images6.jpg'),
+('P007', 'Citrus Sunrise Juice', 7.90 'images7.jpg'),
+('P008', 'Iced Lemon Orange Tea', 8.90, 'images8.jpg');
+('P009', 'Matcha Iced Latte', 14.90, 'images9.jpg'),
+('P010', 'Hot Lattle', 12.90, 'images10.jpg'),
+('P011', 'Hot Matcha Lattle', 13.90, 'images11.jpg'),
+('P012', 'Sweet Strawberry', 12.90, 'images12.jpg'),
+('P013', 'Ice Caramel Lattle', 12.90, 'images13.jpg'),
+('P014', 'Ice Chocolate', 12.90, 'images14.jpg'),
+('P015', 'Hot Chocolate', 7.90 'images15.jpg'),
 
 
 
