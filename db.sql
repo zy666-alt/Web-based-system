@@ -44,6 +44,20 @@ CREATE TABLE `customer` (
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `admin` (
+  `id` char(4) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone_number` varchar(20) NOT NULL,
+  `role` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 -- Table structure for table `item`
 --
 
@@ -97,8 +111,16 @@ INSERT INTO `product` (`id`, `name`, `price`, `photo`) VALUES
 ('P014', 'Ice Chocolate', 12.90, 'images14.jpg'),
 ('P015', 'Hot Chocolate', 7.90 'images15.jpg'),
 
+-- Dumping data for table `admin`
+--
 
-INSERT INTO customer (Name, Email, Phone_number, Gender, Address_line1, Address_line2, city, state, Post_code, Register_Date, Password) VALUES
+INSERT INTO admin ()
+
+
+-- Dumping data for table `customer`
+--
+
+INSERT INTO customer (`id`, `Name`, `Email`, `Phone_number`, `Gender` , `Address_line1`, `Address_line2`, `city`, `state`, `Post_code`, `Register_Date`, `Password`) VALUES
 ('Angela Chin Jie Mei', 'angela.chin@gmail.com', '0184388295', 'Female', 'No. 15, Jalan Burma', 'Jelutong', 'George Town', 'Pulau Pinang', '10450', '2024-07-23', 'St4WxH28'),
 ('Lim Ming Ming', 'lim.ming@email.com', '0123456789', 'Female', '12, Jalan SS2/72', 'Taman Bahagia', 'Petaling Jaya', 'Selangor', '47300', '2023-05-12', 'Ax7mKp29'),
 ('Nur Aisyah binti Abdullah', 'nuraisyah@email.com', '0112345678', 'Female', '45, Jalan Merbuk', 'Taman Desa', 'Kuala Lumpur', 'WP Kuala Lumpur', '58100', '2023-07-23', 'Qw8ZtL41'),
