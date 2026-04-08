@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // User session
-$_user = $_SESSION['user'] ?? null;
+$_user = $_SESSION['customer'] ?? null;
 
 // Helper: check POST
 function is_post() {
@@ -19,8 +19,8 @@ function redirect($url) {
 }
 
 // Protect page (login required)
-function auth_user() {
-    if (empty($_SESSION['user'])) {
+function auth_customer() {
+    if (empty($_SESSION['customer'])) {
         redirect('/login.php');
     }
 }
