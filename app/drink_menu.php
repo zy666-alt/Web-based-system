@@ -41,21 +41,21 @@ $_title = 'Drink Shop';
 
 <script>
     const arr = [
-        'app/images/image1.png',
-        'app/images/image2.png',
-        'app/images/image3.png',
-        'app/images/image4.png',
-        'app/images/image5.png',
-        'app/images/image6.png',
-        'app/images/image7.png',
-        'app/images/image8.png',
-        'app/images/image9.png',
-        'app/images/image10.png',
-        'app/images/image11.png',
-        'app/images/image12.png',
-        'app/images/image13.png',
-        'app/images/image14.png',
-        'app/images/image15.png'
+        '/images/image1.png',
+        '/images/image2.png',
+        '/images/image3.png',
+        '/images/image4.png',
+        '/images/image5.png',
+        '/images/image6.png',
+        '/images/image7.png',
+        '/images/image8.png',
+        '/images/image9.png',
+        '/images/image10.png',
+        '/images/image11.png',
+        '/images/image12.png',
+        '/images/image13.png',
+        '/images/image14.png',
+        '/images/image15.png'
     ];
 
     let i = 0;
