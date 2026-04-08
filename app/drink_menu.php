@@ -47,14 +47,14 @@ $_title = 'Drink Shop';
         'app/images/image4.png',
         'app/images/image5.png',
         'app/images/image6.png',
-        'app/images/image7.png'
-        'app/images/image8.png'
-        'app/images/image9.png'
-        'app/images/image10.png'
-        'app/images/image11.png'
-        'app/images/image12.png'
-        'app/images/image13.png'
-        'app/images/image14.png'
+        'app/images/image7.png',
+        'app/images/image8.png',
+        'app/images/image9.png',
+        'app/images/image10.png',
+        'app/images/image11.png',
+        'app/images/image12.png',
+        'app/images/image13.png',
+        'app/images/image14.png',
         'app/images/image15.png'
     ];
 
