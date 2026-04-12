@@ -3,13 +3,15 @@ include '_base.php';
 
 // ----------------------------------------------------------------------------
 
+$_err = [];
+
 if (is_post()) {
     $email = req('email');
     $password = req('password');
 
     // Validate: email
     if ($email == ''){
-      $_err['email'] =‘Required’;
+      $_err['email'] ='Required';
     }
     else if (!is_email($email)) {
         $_err['email'] = 'Invalid email';
@@ -30,9 +32,13 @@ if (is_post()) {
         $u = $stm->fetch();
 
       //if user found
-        if ($u) {
+        if ($u)  {
+            $_SESSION['role'] = 'customer';
             temp('info', 'Login successfully');
             login($u);
+
+            header('Location: index.php');
+            exit;
         }
         else {
             $_err['password'] = 'Not matched';
@@ -42,7 +48,7 @@ if (is_post()) {
 
 // ----------------------------------------------------------------------------
 
-$_title = 'Login';
+$_title = 'Customer Login';
 include '_head.php';
 ?>
 
