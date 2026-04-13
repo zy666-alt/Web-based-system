@@ -21,14 +21,14 @@ function redirect($url) {
 // Protect page (login required)
 function auth_customer() {
     if (empty($_SESSION['customer'])) {
-        redirect('/login.php');
+        redirect('/customer_login.php');
     }
 }
 
 // Admin only
 function auth_admin() {
     if (empty($_SESSION['user']) || $_SESSION['user']['role'] !== 'Admin') {
-        redirect('/login.php');
+        redirect('/staff_login.php');
     }
 }
 ?>
