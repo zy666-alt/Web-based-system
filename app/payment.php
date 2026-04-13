@@ -12,7 +12,7 @@ $order = $stm->fetch();
 
 if (!$order) 
   temp('error','Invalid order');
-exit;
+  exit;
 
 if (is_post()) {
     $method = req('method');
