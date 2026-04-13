@@ -20,6 +20,7 @@ function redirect($url) {
 
 // Protect page (login required)
 function auth_customer() {
+    function auth_customer() {
     if (empty($_SESSION['customer'])) {
         redirect('/customer_login.php');
     }
@@ -27,7 +28,7 @@ function auth_customer() {
 
 // Admin only
 function auth_admin() {
-    if (empty($_SESSION['user']) || $_SESSION['user']['role'] !== 'Admin') {
+    if (empty($_SESSION['admin'])) {
         redirect('/staff_login.php');
     }
 }
